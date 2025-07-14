@@ -1,33 +1,58 @@
-<details><summary>Neuron 10a60fe4-a49c-43d6-aa69-5f3403fc7fd7</summary>
-- 2025-07-14T10:25:08.697604: I am born as Neuron 10a60fe4-a49c-43d6-aa69-5f3403fc7fd7 with baseline threshold 1.0, refractory offset 0.5, decay factor 0.9, and weights [1.0].
-- 2025-07-14T10:25:08.697618: I've received an input event with value 0.6 from cross_input_0.
-- 2025-07-14T10:25:08.697622: My membrane potential has decayed from 0.0 to 0.6 after receiving input.
-- 2025-07-14T10:25:08.697624: My threshold is currently 1.0.
-- 2025-07-14T10:25:08.697628: I did not fire because my membrane potential (0.6) did not meet my threshold (1.0).
-- 2025-07-14T10:25:08.697634: Here is my recent firing history: No recent firings.
-- 2025-07-14T10:25:08.697639: I've received an input event with value 0.5 from cross_input_1.
-- 2025-07-14T10:25:08.697642: My membrane potential has decayed from 0.6 to 1.04 after receiving input.
-- 2025-07-14T10:25:08.697644: My threshold is currently 1.0.
-- 2025-07-14T10:25:08.697647: I decided to fire because my membrane potential (1.04) exceeded my threshold (1.0).
-- 2025-07-14T10:25:08.697652: Entering refractory period; raising threshold to 1.5 after firing.
-- 2025-07-14T10:25:08.697655: Resetting membrane potential from 1.04 to baseline (0.0) after firing.
-- 2025-07-14T10:25:08.697659: Here is my recent firing history: ['2025-07-14T10:25:08.697649']
-- 2025-07-14T10:25:08.697663: I've received an input event with value 1.1 from cross_input_2.
-- 2025-07-14T10:25:08.697665: My membrane potential has decayed from 0.0 to 1.1 after receiving input.
-- 2025-07-14T10:25:08.697667: My threshold is currently 1.5.
-- 2025-07-14T10:25:08.697670: I did not fire because my membrane potential (1.1) did not meet my threshold (1.5).
-- 2025-07-14T10:25:08.697675: Here is my recent firing history: ['2025-07-14T10:25:08.697649']
-- 2025-07-14T10:25:08.697679: I've received an input event with value 0.4 from cross_input_3.
-- 2025-07-14T10:25:08.697682: My membrane potential has decayed from 1.1 to 1.3900000000000001 after receiving input.
-- 2025-07-14T10:25:08.697684: My threshold is currently 1.5.
-- 2025-07-14T10:25:08.697688: I did not fire because my membrane potential (1.3900000000000001) did not meet my threshold (1.5).
-- 2025-07-14T10:25:08.697692: Here is my recent firing history: ['2025-07-14T10:25:08.697649']
-- 2025-07-14T10:25:08.697695: My refractory period has ended, returning threshold from 1.5 to baseline 1.0.
-- 2025-07-14T10:25:08.697699: I've received an input event with value 0.7 from cross_input_4.
-- 2025-07-14T10:25:08.697702: My membrane potential has decayed from 1.3900000000000001 to 1.951 after receiving input.
-- 2025-07-14T10:25:08.697704: My threshold is currently 1.0.
-- 2025-07-14T10:25:08.697707: I decided to fire because my membrane potential (1.951) exceeded my threshold (1.0).
-- 2025-07-14T10:25:08.697711: Entering refractory period; raising threshold to 1.5 after firing.
-- 2025-07-14T10:25:08.697713: Resetting membrane potential from 1.951 to baseline (0.0) after firing.
-- 2025-07-14T10:25:08.697717: Here is my recent firing history: ['2025-07-14T10:25:08.697649', '2025-07-14T10:25:08.697708']
+- [11:42:29] **pattern_event**: Neuron fired exactly at threshold (1.5). Recording pattern. (Neuron bd2a6f26-13dc-4a83-bcb8-5a359bae225f) | {'input': 1.5, 'threshold': 1.5}
+- [11:42:29] **boundary_notification**: Neuron received inhibitory input; membrane potential is negative (-0.5). (Neuron bd2a6f26-13dc-4a83-bcb8-5a359bae225f) | {'param': 'membrane_potential', 'value': -0.5, 'safe_min': 0, 'safe_max': 1.5, 'action': 'Recovery'}
+- [11:42:29] **pattern_event**: Near-miss: membrane potential 1.0 just below threshold 1.0. (Neuron bd2a6f26-13dc-4a83-bcb8-5a359bae225f) | {'input': 1.0, 'threshold': 1.0}
+- [11:42:29] **pattern_event**: Neuron fired with membrane potential greatly exceeding threshold (2.0 > 1.5). Stress test. (Neuron bd2a6f26-13dc-4a83-bcb8-5a359bae225f) | {'input': 2.0, 'threshold': 1.5}
+
+<details><summary>Neuron bd2a6f26-13dc-4a83-bcb8-5a359bae225f</summary>
+- [11:42:29] I am born as Neuron bd2a6f26-13dc-4a83-bcb8-5a359bae225f with baseline threshold 1.0, refractory offset 0.5, decay factor 0.95, and weights [1.0].
+- [11:42:29] I've received an input event with value 1.0 from exact_threshold_0.
+- [11:42:29] My membrane potential has decayed from 0.0 to 1.0 after receiving input.
+- [11:42:29] My threshold is currently 1.0.
+- [11:42:29] I decided to fire because my membrane potential (1.0) exceeded my threshold (1.0).
+- [11:42:29] Entering refractory period; raising threshold to 1.5 after firing.
+- [11:42:29] Resetting membrane potential from 1.0 to baseline (0.0) after firing.
+- [11:42:29] Here is my recent firing history: ['2025-07-14T11:42:29.732992']
+- [11:42:29] I've received an input event with value 0.99 from just_below_1.
+- [11:42:29] My membrane potential has decayed from 0.0 to 0.99 after receiving input.
+- [11:42:29] My threshold is currently 1.5.
+- [11:42:29] I did not fire because my membrane potential (0.99) did not meet my threshold (1.5).
+- [11:42:29] Here is my recent firing history: ['2025-07-14T11:42:29.732992']
+- [11:42:29] I've received an input event with value 1.5 from well_above_2.
+- [11:42:29] My membrane potential has decayed from 0.99 to 2.4405 after receiving input.
+- [11:42:29] My threshold is currently 1.5.
+- [11:42:29] I decided to fire because my membrane potential (2.4405) exceeded my threshold (1.5).
+- [11:42:29] Entering refractory period; raising threshold to 1.5 after firing.
+- [11:42:29] Resetting membrane potential from 2.4405 to baseline (0.0) after firing.
+- [11:42:29] Here is my recent firing history: ['2025-07-14T11:42:29.732992', '2025-07-14T11:42:29.733121']
+- [11:42:29] I've received an input event with value -0.5 from inhibitory_3.
+- [11:42:29] My membrane potential has decayed from 0.0 to -0.5 after receiving input.
+- [11:42:29] My threshold is currently 1.5.
+- [11:42:29] I did not fire because my membrane potential (-0.5) did not meet my threshold (1.5).
+- [11:42:29] Here is my recent firing history: ['2025-07-14T11:42:29.732992', '2025-07-14T11:42:29.733121']
+- [11:42:29] I've received an input event with value 1.0 from exact_threshold_4.
+- [11:42:29] My membrane potential has decayed from -0.5 to 0.525 after receiving input.
+- [11:42:29] My threshold is currently 1.5.
+- [11:42:29] I did not fire because my membrane potential (0.525) did not meet my threshold (1.5).
+- [11:42:29] Here is my recent firing history: ['2025-07-14T11:42:29.732992', '2025-07-14T11:42:29.733121']
+- [11:42:29] My refractory period has ended, returning threshold from 1.5 to baseline 1.0.
+- [11:42:29] I've received an input event with value 0.98 from near_miss_5.
+- [11:42:29] My membrane potential has decayed from 0.525 to 1.47875 after receiving input.
+- [11:42:29] My threshold is currently 1.0.
+- [11:42:29] I decided to fire because my membrane potential (1.47875) exceeded my threshold (1.0).
+- [11:42:29] Entering refractory period; raising threshold to 1.5 after firing.
+- [11:42:29] Resetting membrane potential from 1.47875 to baseline (0.0) after firing.
+- [11:42:29] Here is my recent firing history: ['2025-07-14T11:42:29.733121', '2025-07-14T11:42:29.733378']
+- [11:42:29] I've received an input event with value 1.01 from just_above_6.
+- [11:42:29] My membrane potential has decayed from 0.0 to 1.01 after receiving input.
+- [11:42:29] My threshold is currently 1.5.
+- [11:42:29] I did not fire because my membrane potential (1.01) did not meet my threshold (1.5).
+- [11:42:29] Here is my recent firing history: ['2025-07-14T11:42:29.733121', '2025-07-14T11:42:29.733378']
+- [11:42:29] I've received an input event with value 2.0 from stress_test_7.
+- [11:42:29] My membrane potential has decayed from 1.01 to 2.9595 after receiving input.
+- [11:42:29] My threshold is currently 1.5.
+- [11:42:29] I decided to fire because my membrane potential (2.9595) exceeded my threshold (1.5).
+- [11:42:29] Entering refractory period; raising threshold to 1.5 after firing.
+- [11:42:29] Resetting membrane potential from 2.9595 to baseline (0.0) after firing.
+- [11:42:29] Here is my recent firing history: ['2025-07-14T11:42:29.733378', '2025-07-14T11:42:29.733517']
+- [11:42:29] **lesson_learned**: Recovery complete. Lesson learned: More frequent adaptation of threshold after repeated near-misses improves response accuracy.
 </details>

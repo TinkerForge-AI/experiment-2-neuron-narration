@@ -1,0 +1,21 @@
+# patternwatcher_config.py
+# Configuration for PatternWatcher sensitivity, boundaries, learning, and memory
+
+SAFE_THRESHOLD_MIN = 0.5
+SAFE_THRESHOLD_MAX = 2.0
+SAFE_REFRACTORY_OFFSET_MIN = 0.1
+SAFE_REFRACTORY_OFFSET_MAX = 1.0
+SAFE_DECAY_FACTOR_MIN = 0.5
+SAFE_DECAY_FACTOR_MAX = 0.95
+SAFE_MEMBRANE_POTENTIAL_MIN = -2.0
+SAFE_MEMBRANE_POTENTIAL_MAX = 3.0
+
+PATTERNWATCHER_SENSITIVITY = 0.8  # How quickly PatternWatcher reacts to boundary events
+PATTERNWATCHER_LEARNING_RATE = 0.1
+PATTERNWATCHER_MEMORY_WINDOW = 10  # Number of events to remember for learning
+PATTERNWATCHER_NOTIFICATION_THRESHOLD = 0.9  # Fraction of unsafe bound before notification
+
+# Patterns and learning history
+PATTERNWATCHER_LEARNING_HISTORY = []
+PATTERNWATCHER_SUCCESSFUL_RECOGNITIONS = []
+PATTERNWATCHER_FAILED_RECOGNITIONS = []
