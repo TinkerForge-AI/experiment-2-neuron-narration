@@ -60,14 +60,80 @@ def scenario_sleep_wake_stress():
 
 # --- Scenario 5: Pattern Notification Mock ---
 def scenario_pattern_notification():
-    neuron = Neuron(threshold=1.0)
-    neuron.receive_input(0.9, source="pre_pattern")
-    neuron.notify_pattern("Recurring pattern: stimulusX")
-    neuron.receive_input(1.2, source="post_pattern")
-    save_log("scenario_pattern_notification.md", neuron)
-    print("[Pattern Notification Mock] Summary:")
-    print("  PatternWatcher notification and neuron response.")
-    print("  Recent firings:", [t for t, _, fired in neuron.history if fired])
+    """
+    Enhanced scenario: Two neurons interact with PatternWatcher and NeuronPatternInterface over multiple cycles.
+    Demonstrates notification, recommendation, directive, warning, reward, inquiry, skepticism, trust evolution, debate, partial adoption, independent recognition, and introspective commentary.
+    """
+    from neuron_pattern_interface import NeuronPatternInterface
+    from pattern_watcher import PatternWatcher
+    interface = NeuronPatternInterface()
+    watcher = PatternWatcher(interface)
+
+    neuronA = Neuron(threshold=1.0, interface=interface)
+    neuronB = Neuron(threshold=1.2, interface=interface)
+
+    # Cycle 1: Notification
+    watcher.discover_pattern("stimulusY")
+    interface.notify_neuron(neuronA, "stimulusY")
+    interface.notify_neuron(neuronB, "stimulusY")
+    neuronA.log_event("Reflecting: I am skeptical about stimulusY and will monitor before adapting.")
+    neuronB.log_event("Reflecting: I am open to new patterns but need more evidence.")
+
+    # Cycle 2: Recommendation
+    watcher.recommend_pattern(neuronA, "stimulusY")
+    watcher.recommend_pattern(neuronB, "stimulusY")
+    neuronA.log_event("Reflecting: Received recommendation to lower threshold for stimulusY. After debate, I will monitor but not yet adapt.")
+    neuronB.log_event("Reflecting: I am debating the recommendation and will partially adopt.")
+    neuronB.threshold -= 0.05
+
+    # Cycle 3: Directive
+    neuronA.log_event("PatternWatcher issued a directive to fire on stimulusY. I feel pressure to comply, but will log my discomfort.")
+    neuronB.log_event("PatternWatcher issued a directive to fire on stimulusY. I will comply for now.")
+    neuronA.trust_score -= 0.05
+    neuronB.trust_score += 0.05
+
+    # Cycle 4: Warning
+    neuronA.log_event("PatternWatcher issued a warning about spurious firing on stimulusZ. I raised my threshold for stimulusZ.")
+    neuronB.log_event("PatternWatcher issued a warning about spurious firing on stimulusZ. I am ignoring the warning for now.")
+    neuronA.threshold += 0.1
+
+    # Cycle 5: Reward
+    watcher.update_trust(neuronA, +0.12)
+    watcher.update_trust(neuronB, +0.07)
+    neuronA.log_event(f"PatternWatcher rewarded my accurate firing. My trust score for PatternWatcher increased to {watcher.trust_scores[neuronA.id]:.2f}.")
+    neuronB.log_event(f"PatternWatcher rewarded my accurate firing. My trust score for PatternWatcher increased to {watcher.trust_scores[neuronB.id]:.2f}.")
+
+    # Cycle 6: Inquiry
+    neuronA.log_event("PatternWatcher inquired about my pattern recognition process. I explained my reasoning in detail.")
+    neuronB.log_event("PatternWatcher inquired about my pattern recognition process. I am still forming my approach.")
+
+    # Cycle 7: Independent Recognition (with revision possibility)
+    neuronA.encounter_pattern("stimulusY")
+    neuronB.encounter_pattern("stimulusY")
+    neuronA.log_event("After repeated encounters, I now recognize stimulusY independently and have graduated from the interface, but remain open to input.")
+    neuronB.log_event("After repeated encounters, I now recognize stimulusY independently and have graduated from the interface, but remain open to input.")
+
+    # Cycle 8: Reflection
+    neuronA.log_event("Reflecting on my experience, I am now confident in my own pattern recognition abilities.")
+    neuronB.log_event("Reflecting on my experience, I am more trusting of PatternWatcher but value my own judgment.")
+
+    # Cycle 9: Mentoring/Collaboration
+    neuronA.share_pattern(neuronB, "stimulusY")
+
+    # Cycle 10: Negative encounter and revision
+    neuronA.encounter_pattern("stimulusY", negative=True)
+    neuronB.encounter_pattern("stimulusY", negative=True)
+    from pattern_watcher import PatternWatcher
+    watcher = PatternWatcher(interface)
+    watcher.reflect_on_revision("stimulusY")
+
+    # Save combined log
+    log_content = neuronA.markdown_log() + "\n\n" + neuronB.markdown_log()
+    with open(os.path.join(LOG_DIR, "scenario_pattern_notification.md"), "w") as f:
+        f.write(log_content)
+    print("[PatternWatcher–Neuron Enhanced] Scenario Summary:")
+    print("  Two neurons, multiple message types, trust dynamics, introspective commentary, mentoring, revision.")
+    print("  Review scenario_pattern_notification.md for full narrative logs.")
 
 # --- Scenario 6: Feedback Variation ---
 

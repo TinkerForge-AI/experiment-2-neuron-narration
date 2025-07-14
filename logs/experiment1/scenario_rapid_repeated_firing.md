@@ -1,35 +1,35 @@
-<details><summary>Neuron e0ac32c2-a820-4933-921a-84ad9ddb476a</summary>
-- 2025-07-13T23:36:26.734511: I am born as Neuron e0ac32c2-a820-4933-921a-84ad9ddb476a with baseline threshold 1.0, refractory offset 0.5, decay factor 0.9, and weights [1.0].
-- 2025-07-13T23:36:26.734519: I've received an input event with value 1.2 from high_input_0.
-- 2025-07-13T23:36:26.734522: My membrane potential has decayed from 0.0 to 1.2 after receiving input.
-- 2025-07-13T23:36:26.734524: My threshold is currently 1.0.
-- 2025-07-13T23:36:26.734527: I decided to fire because my membrane potential (1.2) exceeded my threshold (1.0).
-- 2025-07-13T23:36:26.734531: Entering refractory period; raising threshold to 1.5 after firing.
-- 2025-07-13T23:36:26.734534: Resetting membrane potential from 1.2 to baseline (0.0) after firing.
-- 2025-07-13T23:36:26.734538: Here is my recent firing history: ['2025-07-13T23:36:26.734529']
-- 2025-07-13T23:36:26.734542: I've received an input event with value 1.2 from high_input_1.
-- 2025-07-13T23:36:26.734545: My membrane potential has decayed from 0.0 to 1.2 after receiving input.
-- 2025-07-13T23:36:26.734547: My threshold is currently 1.5.
-- 2025-07-13T23:36:26.734549: I did not fire because my membrane potential (1.2) did not meet my threshold (1.5).
-- 2025-07-13T23:36:26.734554: Here is my recent firing history: ['2025-07-13T23:36:26.734529']
-- 2025-07-13T23:36:26.734557: I've received an input event with value 1.2 from high_input_2.
-- 2025-07-13T23:36:26.734560: My membrane potential has decayed from 1.2 to 2.2800000000000002 after receiving input.
-- 2025-07-13T23:36:26.734563: My threshold is currently 1.5.
-- 2025-07-13T23:36:26.734566: I decided to fire because my membrane potential (2.2800000000000002) exceeded my threshold (1.5).
-- 2025-07-13T23:36:26.734569: Entering refractory period; raising threshold to 1.5 after firing.
-- 2025-07-13T23:36:26.734572: Resetting membrane potential from 2.2800000000000002 to baseline (0.0) after firing.
-- 2025-07-13T23:36:26.734576: Here is my recent firing history: ['2025-07-13T23:36:26.734529', '2025-07-13T23:36:26.734567']
-- 2025-07-13T23:36:26.734579: I've received an input event with value 1.2 from high_input_3.
-- 2025-07-13T23:36:26.734582: My membrane potential has decayed from 0.0 to 1.2 after receiving input.
-- 2025-07-13T23:36:26.734584: My threshold is currently 1.5.
-- 2025-07-13T23:36:26.734586: I did not fire because my membrane potential (1.2) did not meet my threshold (1.5).
-- 2025-07-13T23:36:26.734591: Here is my recent firing history: ['2025-07-13T23:36:26.734529', '2025-07-13T23:36:26.734567']
-- 2025-07-13T23:36:26.734594: I've received an input event with value 1.2 from high_input_4.
-- 2025-07-13T23:36:26.734597: My membrane potential has decayed from 1.2 to 2.2800000000000002 after receiving input.
-- 2025-07-13T23:36:26.734599: My threshold is currently 1.5.
-- 2025-07-13T23:36:26.734602: I decided to fire because my membrane potential (2.2800000000000002) exceeded my threshold (1.5).
-- 2025-07-13T23:36:26.734606: Entering refractory period; raising threshold to 1.5 after firing.
-- 2025-07-13T23:36:26.734609: Resetting membrane potential from 2.2800000000000002 to baseline (0.0) after firing.
-- 2025-07-13T23:36:26.734612: Here is my recent firing history: ['2025-07-13T23:36:26.734529', '2025-07-13T23:36:26.734567', '2025-07-13T23:36:26.734603']
-- 2025-07-13T23:36:26.734615: PatternWatcher has notified me about a recurring pattern: Rapid repeated firing detected. I will monitor this closely.
+<details><summary>Neuron 6b0a01e9-86e8-4da6-ac48-f5db703dceae</summary>
+- 2025-07-14T10:25:08.697949: I am born as Neuron 6b0a01e9-86e8-4da6-ac48-f5db703dceae with baseline threshold 1.0, refractory offset 0.5, decay factor 0.9, and weights [1.0].
+- 2025-07-14T10:25:08.697958: I've received an input event with value 1.2 from high_input_0.
+- 2025-07-14T10:25:08.697961: My membrane potential has decayed from 0.0 to 1.2 after receiving input.
+- 2025-07-14T10:25:08.697963: My threshold is currently 1.0.
+- 2025-07-14T10:25:08.697967: I decided to fire because my membrane potential (1.2) exceeded my threshold (1.0).
+- 2025-07-14T10:25:08.697971: Entering refractory period; raising threshold to 1.5 after firing.
+- 2025-07-14T10:25:08.697974: Resetting membrane potential from 1.2 to baseline (0.0) after firing.
+- 2025-07-14T10:25:08.697978: Here is my recent firing history: ['2025-07-14T10:25:08.697968']
+- 2025-07-14T10:25:08.697982: I've received an input event with value 1.2 from high_input_1.
+- 2025-07-14T10:25:08.697985: My membrane potential has decayed from 0.0 to 1.2 after receiving input.
+- 2025-07-14T10:25:08.697987: My threshold is currently 1.5.
+- 2025-07-14T10:25:08.697990: I did not fire because my membrane potential (1.2) did not meet my threshold (1.5).
+- 2025-07-14T10:25:08.697995: Here is my recent firing history: ['2025-07-14T10:25:08.697968']
+- 2025-07-14T10:25:08.697999: I've received an input event with value 1.2 from high_input_2.
+- 2025-07-14T10:25:08.698002: My membrane potential has decayed from 1.2 to 2.2800000000000002 after receiving input.
+- 2025-07-14T10:25:08.698004: My threshold is currently 1.5.
+- 2025-07-14T10:25:08.698007: I decided to fire because my membrane potential (2.2800000000000002) exceeded my threshold (1.5).
+- 2025-07-14T10:25:08.698011: Entering refractory period; raising threshold to 1.5 after firing.
+- 2025-07-14T10:25:08.698014: Resetting membrane potential from 2.2800000000000002 to baseline (0.0) after firing.
+- 2025-07-14T10:25:08.698018: Here is my recent firing history: ['2025-07-14T10:25:08.697968', '2025-07-14T10:25:08.698009']
+- 2025-07-14T10:25:08.698021: I've received an input event with value 1.2 from high_input_3.
+- 2025-07-14T10:25:08.698023: My membrane potential has decayed from 0.0 to 1.2 after receiving input.
+- 2025-07-14T10:25:08.698026: My threshold is currently 1.5.
+- 2025-07-14T10:25:08.698028: I did not fire because my membrane potential (1.2) did not meet my threshold (1.5).
+- 2025-07-14T10:25:08.698033: Here is my recent firing history: ['2025-07-14T10:25:08.697968', '2025-07-14T10:25:08.698009']
+- 2025-07-14T10:25:08.698036: I've received an input event with value 1.2 from high_input_4.
+- 2025-07-14T10:25:08.698039: My membrane potential has decayed from 1.2 to 2.2800000000000002 after receiving input.
+- 2025-07-14T10:25:08.698041: My threshold is currently 1.5.
+- 2025-07-14T10:25:08.698044: I decided to fire because my membrane potential (2.2800000000000002) exceeded my threshold (1.5).
+- 2025-07-14T10:25:08.698048: Entering refractory period; raising threshold to 1.5 after firing.
+- 2025-07-14T10:25:08.698051: Resetting membrane potential from 2.2800000000000002 to baseline (0.0) after firing.
+- 2025-07-14T10:25:08.698055: Here is my recent firing history: ['2025-07-14T10:25:08.697968', '2025-07-14T10:25:08.698009', '2025-07-14T10:25:08.698046']
+- 2025-07-14T10:25:08.698058: PatternWatcher has notified me about a recurring pattern: Rapid repeated firing detected. I will monitor this closely.
 </details>

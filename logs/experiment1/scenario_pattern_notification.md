@@ -1,16 +1,37 @@
-<details><summary>Neuron edc893d6-5192-452e-99d9-f3331e5c4dbc</summary>
-- 2025-07-13T23:36:26.734943: I am born as Neuron edc893d6-5192-452e-99d9-f3331e5c4dbc with baseline threshold 1.0, refractory offset 0.5, decay factor 0.9, and weights [1.0].
-- 2025-07-13T23:36:26.734949: I've received an input event with value 0.9 from pre_pattern.
-- 2025-07-13T23:36:26.734952: My membrane potential has decayed from 0.0 to 0.9 after receiving input.
-- 2025-07-13T23:36:26.734954: My threshold is currently 1.0.
-- 2025-07-13T23:36:26.734957: I did not fire because my membrane potential (0.9) did not meet my threshold (1.0).
-- 2025-07-13T23:36:26.734962: Here is my recent firing history: No recent firings.
-- 2025-07-13T23:36:26.734965: PatternWatcher has notified me about a recurring pattern: Recurring pattern: stimulusX. I will monitor this closely.
-- 2025-07-13T23:36:26.734967: I've received an input event with value 1.2 from post_pattern.
-- 2025-07-13T23:36:26.734970: My membrane potential has decayed from 0.9 to 2.01 after receiving input.
-- 2025-07-13T23:36:26.734972: My threshold is currently 1.0.
-- 2025-07-13T23:36:26.734975: I decided to fire because my membrane potential (2.01) exceeded my threshold (1.0).
-- 2025-07-13T23:36:26.734979: Entering refractory period; raising threshold to 1.5 after firing.
-- 2025-07-13T23:36:26.734981: Resetting membrane potential from 2.01 to baseline (0.0) after firing.
-- 2025-07-13T23:36:26.734985: Here is my recent firing history: ['2025-07-13T23:36:26.734976']
+<details><summary>Neuron a7d9070e-598f-42d4-87b4-0e3d3a17ffa3</summary>
+- 2025-07-14T10:25:08.702271: I am born as Neuron a7d9070e-598f-42d4-87b4-0e3d3a17ffa3 with baseline threshold 1.0, refractory offset 0.5, decay factor 0.9, and weights [1.0].
+- 2025-07-14T10:25:08.702356: Neuron a7d9070e-598f-42d4-87b4-0e3d3a17ffa3: Received pattern notification 'stimulusY' from interface. Monitoring for now.
+- 2025-07-14T10:25:08.702371: Neuron a7d9070e-598f-42d4-87b4-0e3d3a17ffa3: I remain open to future PatternWatcher input, even after graduation.
+- 2025-07-14T10:25:08.702396: Reflecting: I am skeptical about stimulusY and will monitor before adapting.
+- 2025-07-14T10:25:08.702411: Neuron a7d9070e-598f-42d4-87b4-0e3d3a17ffa3: Despite repeated suggestions, I remain unconvinced about 'stimulusY'.
+- 2025-07-14T10:25:08.702493: Reflecting: Received recommendation to lower threshold for stimulusY. After debate, I will monitor but not yet adapt.
+- 2025-07-14T10:25:08.702498: PatternWatcher issued a directive to fire on stimulusY. I feel pressure to comply, but will log my discomfort.
+- 2025-07-14T10:25:08.702501: PatternWatcher issued a warning about spurious firing on stimulusZ. I raised my threshold for stimulusZ.
+- 2025-07-14T10:25:08.702540: PatternWatcher rewarded my accurate firing. My trust score for PatternWatcher increased to 0.61.
+- 2025-07-14T10:25:08.702545: PatternWatcher inquired about my pattern recognition process. I explained my reasoning in detail.
+- 2025-07-14T10:25:08.702552: Neuron a7d9070e-598f-42d4-87b4-0e3d3a17ffa3: After repeated encounters, I now recognize 'stimulusY' independently and have graduated from the interface, but remain open to input.
+- 2025-07-14T10:25:08.702579: After repeated encounters, I now recognize stimulusY independently and have graduated from the interface, but remain open to input.
+- 2025-07-14T10:25:08.702582: Reflecting on my experience, I am now confident in my own pattern recognition abilities.
+- 2025-07-14T10:25:08.702587: Neuron a7d9070e-598f-42d4-87b4-0e3d3a17ffa3: Sharing my experience with stimulusY to help Neuron c25d9e55-3a0a-4ecf-af84-0f08954dfd49.
+- 2025-07-14T10:25:08.702609: Neuron a7d9070e-598f-42d4-87b4-0e3d3a17ffa3: Following a misfire with stimulusY, I am revising my recognition criteria and trust in my own judgment.
+</details>
+
+<details><summary>Neuron c25d9e55-3a0a-4ecf-af84-0f08954dfd49</summary>
+- 2025-07-14T10:25:08.702293: I am born as Neuron c25d9e55-3a0a-4ecf-af84-0f08954dfd49 with baseline threshold 1.2, refractory offset 0.5, decay factor 0.9, and weights [1.0].
+- 2025-07-14T10:25:08.702382: Neuron c25d9e55-3a0a-4ecf-af84-0f08954dfd49: Received pattern notification 'stimulusY' from interface. Monitoring for now.
+- 2025-07-14T10:25:08.702394: Neuron c25d9e55-3a0a-4ecf-af84-0f08954dfd49: I remain open to future PatternWatcher input, even after graduation.
+- 2025-07-14T10:25:08.702398: Reflecting: I am open to new patterns but need more evidence.
+- 2025-07-14T10:25:08.702459: Neuron c25d9e55-3a0a-4ecf-af84-0f08954dfd49: Despite repeated suggestions, I remain unconvinced about 'stimulusY'.
+- 2025-07-14T10:25:08.702495: Reflecting: I am debating the recommendation and will partially adopt.
+- 2025-07-14T10:25:08.702499: PatternWatcher issued a directive to fire on stimulusY. I will comply for now.
+- 2025-07-14T10:25:08.702503: PatternWatcher issued a warning about spurious firing on stimulusZ. I am ignoring the warning for now.
+- 2025-07-14T10:25:08.702543: PatternWatcher rewarded my accurate firing. My trust score for PatternWatcher increased to 0.56.
+- 2025-07-14T10:25:08.702546: PatternWatcher inquired about my pattern recognition process. I am still forming my approach.
+- 2025-07-14T10:25:08.702566: Neuron c25d9e55-3a0a-4ecf-af84-0f08954dfd49: After repeated encounters, I now recognize 'stimulusY' independently and have graduated from the interface, but remain open to input.
+- 2025-07-14T10:25:08.702581: After repeated encounters, I now recognize stimulusY independently and have graduated from the interface, but remain open to input.
+- 2025-07-14T10:25:08.702584: Reflecting on my experience, I am more trusting of PatternWatcher but value my own judgment.
+- 2025-07-14T10:25:08.702589: Neuron c25d9e55-3a0a-4ecf-af84-0f08954dfd49: Received pattern notification 'stimulusY' from interface. Monitoring for now.
+- 2025-07-14T10:25:08.702604: Neuron c25d9e55-3a0a-4ecf-af84-0f08954dfd49: I remain open to future PatternWatcher input, even after graduation.
+- 2025-07-14T10:25:08.702607: Neuron c25d9e55-3a0a-4ecf-af84-0f08954dfd49: Received mentoring from Neuron a7d9070e-598f-42d4-87b4-0e3d3a17ffa3 regarding stimulusY.
+- 2025-07-14T10:25:08.702630: Neuron c25d9e55-3a0a-4ecf-af84-0f08954dfd49: Following a misfire with stimulusY, I am revising my recognition criteria and trust in my own judgment.
 </details>

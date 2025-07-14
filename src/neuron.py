@@ -7,8 +7,9 @@ import uuid
 
 
 
+
 class Neuron:
-    def __init__(self, neuron_id=None, threshold=1.0, weights=None, history_length=5, refractory_offset=0.5, refractory_events=3, decay_factor=0.9, passive_decay_log_threshold=0.01):
+    def __init__(self, neuron_id=None, threshold=1.0, weights=None, history_length=5, refractory_offset=0.5, refractory_events=3, decay_factor=0.9, passive_decay_log_threshold=0.01, interface=None):
         self.id = neuron_id or str(uuid.uuid4())
         self.baseline_threshold = threshold
         self.threshold = threshold
@@ -26,7 +27,58 @@ class Neuron:
         self.history_length = history_length
         self.passive_decay_log_threshold = passive_decay_log_threshold
         self.last_input_received = False
+        self.interface = interface
+        self.patterns_monitored = set()
+        self.patterns_adopted = set()
+        self.trust_score = 0.5
         self.log_event(f"I am born as Neuron {self.id} with baseline threshold {self.baseline_threshold}, refractory offset {self.refractory_offset}, decay factor {self.decay_factor}, and weights {self.weights}.")
+
+    def receive_pattern_notification(self, pattern, interface):
+        self.log_event(f"Neuron {self.id}: Received pattern notification '{pattern}' from interface. Monitoring for now.")
+        self.patterns_monitored.add(pattern)
+        if interface:
+            interface.update_adoption(self, pattern, "monitoring")
+        self.log_event(f"Neuron {self.id}: I remain open to future PatternWatcher input, even after graduation.")
+
+    def receive_pattern_recommendation(self, pattern, watcher):
+        if pattern in self.patterns_adopted:
+            self.log_event(f"Neuron {self.id}: Already recognize pattern '{pattern}' independently. No longer rely on PatternWatcher, but remain open to input.")
+            return
+        if self.trust_score > 0.8:
+            self.patterns_adopted.add(pattern)
+            self.log_event(f"Neuron {self.id}: PatternWatcher's suggestions have proven useful. I have adopted pattern '{pattern}' and updated my recognition.")
+            watcher.update_trust(self, +0.05, context="PatternWatcher’s recommendation led to successful adoption.")
+            if self.interface:
+                self.interface.update_adoption(self, pattern, "adopted")
+        elif self.trust_score < 0.3:
+            self.log_event(f"Neuron {self.id}: I am challenging PatternWatcher's directive regarding '{pattern}' and will log my experience.")
+            watcher.update_trust(self, -0.05, context="Neuron challenged PatternWatcher directive.")
+            if self.interface:
+                self.interface.update_adoption(self, pattern, "challenging")
+        else:
+            self.log_event(f"Neuron {self.id}: Despite repeated suggestions, I remain unconvinced about '{pattern}'.")
+            watcher.update_trust(self, -0.01, context="Neuron debated PatternWatcher recommendation.")
+            if self.interface:
+                self.interface.update_adoption(self, pattern, "debating")
+
+    def encounter_pattern(self, pattern, negative=False):
+        if pattern in self.patterns_monitored:
+            if negative:
+                self.log_event(f"Neuron {self.id}: Following a misfire with {pattern}, I am revising my recognition criteria and trust in my own judgment.")
+                self.trust_score -= 0.1
+                if self.interface:
+                    self.interface.update_adoption(self, pattern, "revised")
+            else:
+                self.log_event(f"Neuron {self.id}: After repeated encounters, I now recognize '{pattern}' independently and have graduated from the interface, but remain open to input.")
+                self.patterns_adopted.add(pattern)
+                if self.interface:
+                    self.interface.update_adoption(self, pattern, "independent")
+                self.trust_score += 0.1
+    def share_pattern(self, other_neuron, pattern):
+        if pattern in self.patterns_adopted:
+            self.log_event(f"Neuron {self.id}: Sharing my experience with {pattern} to help Neuron {other_neuron.id}.")
+            other_neuron.receive_pattern_notification(pattern, self.interface)
+            other_neuron.log_event(f"Neuron {other_neuron.id}: Received mentoring from Neuron {self.id} regarding {pattern}.")
 
     def log_event(self, message):
         timestamp = datetime.datetime.now().isoformat()
