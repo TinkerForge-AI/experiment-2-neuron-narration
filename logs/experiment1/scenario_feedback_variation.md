@@ -1,0 +1,57 @@
+<details><summary>Neuron 92c8d925-411a-4339-babb-1b05c80341be</summary>
+- 2025-07-13T23:36:26.735121: I am born as Neuron 92c8d925-411a-4339-babb-1b05c80341be with baseline threshold 1.0, refractory offset 0.5, decay factor 0.9, and weights [1.0].
+- 2025-07-13T23:36:26.735129: I've received an input event with value 1.2 from feedback_input_0.
+- 2025-07-13T23:36:26.735132: My membrane potential has decayed from 0.0 to 1.2 after receiving input.
+- 2025-07-13T23:36:26.735134: My threshold is currently 1.0.
+- 2025-07-13T23:36:26.735137: I decided to fire because my membrane potential (1.2) exceeded my threshold (1.0).
+- 2025-07-13T23:36:26.735142: Entering refractory period; raising threshold to 1.5 after firing.
+- 2025-07-13T23:36:26.735144: Resetting membrane potential from 1.2 to baseline (0.0) after firing.
+- 2025-07-13T23:36:26.735148: Here is my recent firing history: ['2025-07-13T23:36:26.735139']
+- 2025-07-13T23:36:26.735151: Waiting for 1 more cycles before returning to baseline threshold.
+- 2025-07-13T23:36:26.735155: My refractory period has ended, returning threshold from 1.5 to baseline 1.0.
+- 2025-07-13T23:36:26.735160: I received positive feedback from Supervisor; lowering my threshold from 1.0 to 0.9 to become more sensitive.
+- 2025-07-13T23:36:26.735165: I received negative feedback from PatternWatcher; raising my threshold from 0.9 to 1.0 to avoid spurious firing.
+- 2025-07-13T23:36:26.735168: I've received an input event with value 1.1 from feedback_input_2.
+- 2025-07-13T23:36:26.735171: My membrane potential has decayed from 0.0 to 1.1 after receiving input.
+- 2025-07-13T23:36:26.735173: My threshold is currently 1.0.
+- 2025-07-13T23:36:26.735175: I decided to fire because my membrane potential (1.1) exceeded my threshold (1.0).
+- 2025-07-13T23:36:26.735179: Entering refractory period; raising threshold to 1.5 after firing.
+- 2025-07-13T23:36:26.735182: Resetting membrane potential from 1.1 to baseline (0.0) after firing.
+- 2025-07-13T23:36:26.735185: Here is my recent firing history: ['2025-07-13T23:36:26.735139', '2025-07-13T23:36:26.735177']
+- 2025-07-13T23:36:26.735188: Waiting for 1 more cycles before returning to baseline threshold.
+- 2025-07-13T23:36:26.735191: My refractory period has ended, returning threshold from 1.5 to baseline 1.0.
+- 2025-07-13T23:36:26.735195: I received positive feedback from Supervisor; lowering my threshold from 1.0 to 0.9 to become more sensitive.
+- 2025-07-13T23:36:26.735199: I received negative feedback from PatternWatcher; raising my threshold from 0.9 to 1.0 to avoid spurious firing.
+- 2025-07-13T23:36:26.735201: I've received an input event with value 1.3 from feedback_input_4.
+- 2025-07-13T23:36:26.735204: My membrane potential has decayed from 0.0 to 1.3 after receiving input.
+- 2025-07-13T23:36:26.735206: My threshold is currently 1.0.
+- 2025-07-13T23:36:26.735208: I decided to fire because my membrane potential (1.3) exceeded my threshold (1.0).
+- 2025-07-13T23:36:26.735212: Entering refractory period; raising threshold to 1.5 after firing.
+- 2025-07-13T23:36:26.735215: Resetting membrane potential from 1.3 to baseline (0.0) after firing.
+- 2025-07-13T23:36:26.735218: Here is my recent firing history: ['2025-07-13T23:36:26.735139', '2025-07-13T23:36:26.735177', '2025-07-13T23:36:26.735210']
+- 2025-07-13T23:36:26.735221: Waiting for 1 more cycles before returning to baseline threshold.
+- 2025-07-13T23:36:26.735224: My refractory period has ended, returning threshold from 1.5 to baseline 1.0.
+- 2025-07-13T23:36:26.735226: I received neutral feedback from Supervisor; keeping my threshold at 1.0.
+- 2025-07-13T23:36:26.735230: I received neutral feedback from Supervisor; keeping my threshold at 1.0.
+- 2025-07-13T23:36:26.735232: I've received an input event with value 1.4 from feedback_input_6.
+- 2025-07-13T23:36:26.735235: My membrane potential has decayed from 0.0 to 1.4 after receiving input.
+- 2025-07-13T23:36:26.735237: My threshold is currently 1.0.
+- 2025-07-13T23:36:26.735239: I decided to fire because my membrane potential (1.4) exceeded my threshold (1.0).
+- 2025-07-13T23:36:26.735243: Entering refractory period; raising threshold to 1.5 after firing.
+- 2025-07-13T23:36:26.735245: Resetting membrane potential from 1.4 to baseline (0.0) after firing.
+- 2025-07-13T23:36:26.735249: Here is my recent firing history: ['2025-07-13T23:36:26.735139', '2025-07-13T23:36:26.735177', '2025-07-13T23:36:26.735210', '2025-07-13T23:36:26.735240']
+- 2025-07-13T23:36:26.735252: Waiting for 1 more cycles before returning to baseline threshold.
+- 2025-07-13T23:36:26.735255: My refractory period has ended, returning threshold from 1.5 to baseline 1.0.
+- 2025-07-13T23:36:26.735257: I received neutral feedback from Supervisor; keeping my threshold at 1.0.
+- 2025-07-13T23:36:26.735260: I received neutral feedback from Supervisor; keeping my threshold at 1.0.
+- 2025-07-13T23:36:26.735262: I've received an input event with value 1.2 from feedback_input_8.
+- 2025-07-13T23:36:26.735265: My membrane potential has decayed from 0.0 to 1.2 after receiving input.
+- 2025-07-13T23:36:26.735267: My threshold is currently 1.0.
+- 2025-07-13T23:36:26.735269: I decided to fire because my membrane potential (1.2) exceeded my threshold (1.0).
+- 2025-07-13T23:36:26.735273: Entering refractory period; raising threshold to 1.5 after firing.
+- 2025-07-13T23:36:26.735275: Resetting membrane potential from 1.2 to baseline (0.0) after firing.
+- 2025-07-13T23:36:26.735280: Here is my recent firing history: ['2025-07-13T23:36:26.735139', '2025-07-13T23:36:26.735177', '2025-07-13T23:36:26.735210', '2025-07-13T23:36:26.735240', '2025-07-13T23:36:26.735271']
+- 2025-07-13T23:36:26.735282: Waiting for 1 more cycles before returning to baseline threshold.
+- 2025-07-13T23:36:26.735285: My refractory period has ended, returning threshold from 1.5 to baseline 1.0.
+- 2025-07-13T23:36:26.735288: I received neutral feedback from Supervisor; keeping my threshold at 1.0.
+</details>
